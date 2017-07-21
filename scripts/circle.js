@@ -44,7 +44,6 @@ Circle.prototype.display = function() {
 };
 Circle.prototype.trySleep = function() {
   if(vectMag(this.vel) < 3) {
-    console.log("heck");
     this.asleep = true;
     this.vel = vectMult(this.vel, 0.8);
   }
