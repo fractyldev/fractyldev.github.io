@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html style="margin:0px">
   <head>
-    <!-- Dependency Tier 0 -->
-    <script src="scripts/timer.js"></script>
-    <script src="scripts/pagesetup.js"></script>
-    <script src="scripts/keys.js"></script>
-    <script src="scripts/vectormath.js"></script>
-    <script src="scripts/line.js"></script>
-    <script src="scripts/constraint.js"></script>
-    <script src="scripts/cord.js"></script>
-    <script src="scripts/circle.js"></script>
-    <!-- Dependency Tier 1 -->
-    <script src="scripts/entity.js"></script>
-    <script src="scripts/player.js"></script>
-    <!-- Dependency Tier 2 -->
+    <script src="scripts/pageutils/timer.js"></script>
+    <script src="scripts/pageutils/pagesetup.js"></script>
+    <script src="scripts/pageutils/keys.js"></script>
+    
+    <script src="scripts/physics/minilibs/lineequation.js"></script>
+    <script src="scripts/physics/minilibs/vectormath.js"></script>
+    <script src="scripts/physics/minilibs/collisiondetection.js"></script>
+    
+    <script src="scripts/physics/physicalentities/line.js"></script>
+    <script src="scripts/physics/physicalentities/circle.js"></script>
+    
+    <script src="scripts/physics/constraints/constraint.js"></script>
+    <script src="scripts/physics/constraints/spring.js"></script>
+    <script src="scripts/physics/constraints/rod.js"></script>
+    <script src="scripts/physics/constraints/cord.js"></script>
+    <script src="scripts/physics/constraints/extender.js"></script>
+    <script src="scripts/physics/constraints/bungee.js"></script>
+    <script src="scripts/physics/constraints/compressor.js"></script>
+    
+    <script src="scripts/gameentities/entity.js"></script>
+    <script src="scripts/gameentities/player.js"></script>
+    
     <script src="scripts/main.js"></script>
     
   </head>
