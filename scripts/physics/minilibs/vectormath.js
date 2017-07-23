@@ -35,4 +35,13 @@ var vectLerp = function(a, b, n) {
   return [a[0] + (b[0] - a[0]) * n,
           a[1] + (b[1] - a[1]) * n];
 };
+var vectMagSq = function(v) {
+  return v[0] * v[0] + v[1] * v[1];
+};
+var vectLimit = function(v, m) {
+  if(vectMag(v) > m) {
+    return vectMult(vectNorm(v), m);
+  }
+  return v;
+};
 
