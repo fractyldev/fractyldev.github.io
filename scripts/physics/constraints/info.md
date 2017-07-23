@@ -14,3 +14,7 @@ The six constraint types are:
 * `Cord` - The Bungee equivalent of the Rod, this has a Rod's physical effect but it only applies when the distance is greater than the constraint's length.
 * `Compressor` - This is the same as a bungee, but it only applies the spring effect if the distance between the nodes is *less* than the constraint's length.
 * `Extender` - The Compressor equivalent of the Rod, this does everything the Rod does, but only when the distance is *less* than the constraint's length.
+## Constraint Tips
+* Don't use ridiculous lengths. Bad glitches can be caused in situations where, for example, two very close circles are constrained by a spring with a huge length and a lot of rigidity.
+* Don't use ridiculous rigidity. Though there is some built in compensation for vibration, it'll still happen if you force it to. Always keep it under 50.
+* Don't have conflicting constraints. This essentially means that you should make each circle **able** to fit into the shape that the constraints want it to. If you have one constraint with a ridiculous length, and the others have a much smaller length, it may form an impossible shape, which is unpredictable and should be (and always can be) avoided.
