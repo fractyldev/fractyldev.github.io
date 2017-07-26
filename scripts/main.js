@@ -55,19 +55,19 @@ function onLoad() {
     one: circles[0],
     two: circles[1],
     length: 110,
-    rigidity: 15,
+    rigidity: 45,
   }));
   constraints.push(new Rod({
     one: circles[0],
     two: circles[2],
     length: 110,
-    rigidity: 15,
+    rigidity: 45,
   }));
   constraints.push(new Rod({
     one: circles[1],
     two: circles[2],
     length: 110,
-    rigidity: 15
+    rigidity: 45
   }));
   
   lines.push(new Line({
